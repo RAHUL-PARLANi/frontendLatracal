@@ -1,13 +1,97 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin:0px;
+  padding:0px;
+  font-family: 'poppins',sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Navbar{
+  display:flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: 'white';
+  box-shadow:  5px 5px 26px #ededed,
+             -5px -5px 26px #ffffff;
+}
+.title{
+  font-size: 25px;
+  color: rgb(123, 65, 247);
+  font-weight: 600;
+}
+.Subtitle{
+  font-size: 20px;
+  font-weight: 600;
+}
+.all-vechicles{
+  display: flex;
+  flex-wrap: wrap;
+}
+.VechileBox{
+  border: 2px solid rgb(123, 65, 247);
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow:  5px 5px 26px #ededed,
+  -5px -5px 26px #ffffff;
+  display: flex;
+  width: 400px;
+  margin-left: 20px;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.VechileBox img{
+  width: 50px;
+  border: 2px solid rgb(123, 65, 247);
+  border-radius: 50%;
+}
+.points{
+  width:300px;
+  display: flex;
+  justify-content: space-between;
+}
+.tag{
+  font-size: 18px;
+}
+.Box1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-shadow:  5px 5px 26px #ededed,
+  -5px -5px 26px #ffffff;
+  height:150px;
+  border: 2px solid rgb(123, 65, 247);
+  width: 150px;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.total-Vechicles{
+  border: 2px solid rgb(123, 65, 247);
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+  font-size: 25px;
+  border-radius: 10px; 
+  text-align: center; 
+}
+.checkout-button{
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(123, 65, 247);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.points input{
+  width:100%;
+  border: 2px solid rgb(123, 65, 247);
+  height: 25px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
 }
