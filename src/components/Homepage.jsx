@@ -7,8 +7,8 @@ const Homepage = () => {
  const [data1,setData1]=useState([]);
  const [allDate,setAllData]=useState([]);
  useEffect(() => {
-   axios.get('http://localhost:5000/api/').then(res=>{setData1(res.data)})
-   axios.get('http://localhost:5000/api/all').then(res=>{setAllData(res.data)})
+   axios.get('https://relaxed-biscuit-86b1d6.netlify.app/.netlify/functions/api/data/').then(res=>{setData1(res.data)})
+   axios.get('https://relaxed-biscuit-86b1d6.netlify.app/.netlify/functions/api/data/all').then(res=>{setAllData(res.data)})
  })
  
  function handleSubit(e){
@@ -20,13 +20,13 @@ const Homepage = () => {
         "numberPlate":noPlate,
         "checkInTime":ctr
     }
-    axios.post('http://localhost:5000/api/add',data)
+    axios.post('https://relaxed-biscuit-86b1d6.netlify.app/.netlify/functions/api/data/add',data)
     alert('Thanks for Checking in');
 }
 function checkout(id){
     var date=new Date();
     const ctr=date.getDate()+"-"+date.getMonth()+"-"+date.getFullYear()+" "+date.getHours()+":"+date.getMinutes();
-    axios.post('http://localhost:5000/api/update/'+id,{'checkOutTime':ctr})
+    axios.post('https://relaxed-biscuit-86b1d6.netlify.app/.netlify/functions/api/data/update/'+id,{'checkOutTime':ctr})
     alert('Succesfully Checkout')
 }
   return (
